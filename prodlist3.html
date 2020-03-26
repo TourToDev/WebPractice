@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>产品列表</title>
+<meta charset="utf-8" />
+<style type="text/css">
+a{
+	text-decoration:none;/*消除默认的下划线*/
+}
+a:link{/*未访问的链接状态*/
+	color:#000;
+}
+a:visited{/*已访问状态*/
+	color:#333;
+}
+a:hover, a:focus{/*鼠标悬停、获得焦点状态*/
+	color:#f30;
+	text-decoration:underline;
+}
+a:active{/*激活状态*/
+	outline:1px dotted red;
+}/*LoVe and HAte */
+i,em{
+	font-style:normal;
+}
+.prodList{
+	1outline:1px dashed green;
+	width:1000px;
+	padding:10px;
+	margin:10px auto;
+	background:linear-gradient(to bottom,#fff,#ccc);
+}
+.prodList ul{
+	--step:10px; /*自定义CSS属性(--变量名)*/
+	list-style:none;
+	padding:0;
+	overflow:hidden; /*防止其所有子元素浮动，导致其高度变为0*/
+	margin:0 calc(var(--step) * -1) calc(-1 * var(--step)) 0;
+	/*0 -10px -10px 0，设置负值的margin相当于增加宽高*/
+	1outline:1px dashed #f90;
+}
+.prodList li{
+	float:left; /*向左浮动，像浮萍漂在水面上，不重叠*/
+	width:25%;
+	1box-sizing:border-box;
+	1padding:5px;
+	1outline:1px dotted blue;
+}
+.prodList li>div{
+	padding:10px;
+	1outline:1px solid red;
+	margin:5px;/*右下外边距为10px*/
+	background:#fff;
+}
+.prodList li>div:hover{
+	box-shadow:0 0 5px 0;
+}
+.prodList .pric{
+	color:#f30;
+	font-size:1.5em;
+	font-weight:bold;
+	font-family:"Arial","Courier New","宋体";
+}
+.prodList .pric>em{
+	font-size:0.8em;
+	font-weight:normal;
+}
+.prodList .name>a, .prodList .attr, .prodList .icon{
+	display:block;
+	height:1.2em;
+	line-height:1.2em;
+	overflow:hidden;
+}
+.prodList .name.jingxuan>a{
+	padding-left:59px;
+	background:url("img/jingxuan.png") no-repeat 0 0.1em;
+}
+.prodList .attr>i,.prodList .icon>i{
+	display:inline-block;
+	background:#ccc;
+	margin:0.1em 1em 0.1em 0;
+	padding:0.05em 0.2em;
+	font-size:0.9em;
+}
+.prodList .comm>i{
+	float:right;
+	box-sizing:border-box;
+	border:1px solid #03f;
+	padding:0.05em 0.2em;
+	font-size:0.8em;
+}
+.prodList .shop{
+	width:8em;
+	white-space:nowrap;/*空白处不换行，不自动换行，只在一行显示*/
+	overflow:hidden;
+	text-overflow:ellipsis;/*文本超出部分显示为省略号*/
+}
+.prodList img{
+	vertical-align:top; /*目的为了消除图片下方的多余空白*/
+}
+.prodList .bigImg{
+	width:100%; /*根据父容器宽度调整*/
+}
+</style>
+</head>
+
+<body>
+<div class="prodList">
+<ul>
+<li>
+<div>
+<div class="img"><a href="##" title="限时优惠999！荣耀20青春版，光学屏幕指纹，4800万超清三摄！荣耀爆品特惠，选品质，购荣耀~"><img src="img/q1.jpg" class="bigImg"></a></div>
+<div class="pric"><em>¥</em>999.00</div>
+<div class="name jingxuan"><a href="##" title="限时优惠999！荣耀20青春版，光学屏幕指纹，4800万超清三摄！荣耀爆品特惠，选品质，购荣耀~">荣耀20青春版 AMOLED屏幕指纹 4000mAh大电池 20W快充 4800万 手机 4GB+64GB 冰岛幻境</a></div>
+<div class="attr"><i>6.25-6.34英寸</i><i>4GB</i><i>4000mAh-4249mAh</i></div>
+<div class="comm">已有<b>23万+</b>人评价</div>
+<div class="shop">荣耀京东自营旗舰店</div>
+<div class="icon"><i>自营</i><i>放心购</i><i>闪购</i></div>
+</div>
+</li>
+<li>
+<div>
+<div class="img"><a href="##" title="3.20-3.23iPhone特价狂欢，iPhone11领券立减200元，享白条12期免息，多款机型超低价抢购！详情请点击！"><img src="img/q2.jpg" class="bigImg"></a></div>
+<div class="pric"><em>¥</em>5999.00</div>
+<div class="name"><a href="##" title="3.20-3.23iPhone特价狂欢，iPhone11领券立减200元，享白条12期免息，多款机型超低价抢购！详情请点击！">Apple iPhone 11 (A2223) 128GB 白色 移动联通电信4G手机 双卡双待</a></div>
+<div class="attr"><i>其它内存</i></div>
+<div class="comm"><i>二手有售</i>已有<b>149万+</b>人评价</div>
+<div class="shop">Apple产品京东自营旗舰店</div>
+<div class="icon"><i>自营</i><i>赠</i></div>
+</div>
+</li>
+<li>
+<div>
+<div class="img"><a href="##" title="限时优惠999！荣耀20青春版，光学屏幕指纹，4800万超清三摄！荣耀爆品特惠，选品质，购荣耀~"><img src="img/q1.jpg" class="bigImg"></a></div>
+<div class="pric"><em>¥</em>999.00</div>
+<div class="name jingxuan"><a href="##" title="限时优惠999！荣耀20青春版，光学屏幕指纹，4800万超清三摄！荣耀爆品特惠，选品质，购荣耀~">荣耀20青春版 AMOLED屏幕指纹 4000mAh大电池 20W快充 4800万 手机 4GB+64GB 冰岛幻境</a></div>
+<div class="attr"><i>6.25-6.34英寸</i><i>4GB</i><i>4000mAh-4249mAh</i></div>
+<div class="comm">已有<b>23万+</b>人评价</div>
+<div class="shop">荣耀京东自营旗舰店</div>
+<div class="icon"><i>自营</i><i>放心购</i><i>闪购</i></div>
+</div>
+</li>
+<li>
+<div>
+<div class="img"><a href="##" title="3.20-3.23iPhone特价狂欢，iPhone11领券立减200元，享白条12期免息，多款机型超低价抢购！详情请点击！"><img src="img/q2.jpg" class="bigImg"></a></div>
+<div class="pric"><em>¥</em>5999.00</div>
+<div class="name"><a href="##" title="3.20-3.23iPhone特价狂欢，iPhone11领券立减200元，享白条12期免息，多款机型超低价抢购！详情请点击！">Apple iPhone 11 (A2223) 128GB 白色 移动联通电信4G手机 双卡双待</a></div>
+<div class="attr"><i>其它内存</i></div>
+<div class="comm"><i>二手有售</i>已有<b>149万+</b>人评价</div>
+<div class="shop">Apple产品京东自营旗舰店</div>
+<div class="icon"><i>自营</i><i>赠</i></div>
+</div>
+</li>
+<li>
+<div>
+<div class="img"><a href="##" title="限时优惠999！荣耀20青春版，光学屏幕指纹，4800万超清三摄！荣耀爆品特惠，选品质，购荣耀~"><img src="img/q1.jpg" class="bigImg"></a></div>
+<div class="pric"><em>¥</em>999.00</div>
+<div class="name jingxuan"><a href="##" title="限时优惠999！荣耀20青春版，光学屏幕指纹，4800万超清三摄！荣耀爆品特惠，选品质，购荣耀~">荣耀20青春版 AMOLED屏幕指纹 4000mAh大电池 20W快充 4800万 手机 4GB+64GB 冰岛幻境</a></div>
+<div class="attr"><i>6.25-6.34英寸</i><i>4GB</i><i>4000mAh-4249mAh</i></div>
+<div class="comm">已有<b>23万+</b>人评价</div>
+<div class="shop">荣耀京东自营旗舰店</div>
+<div class="icon"><i>自营</i><i>放心购</i><i>闪购</i></div>
+</div>
+</li>
+<li>
+<div>
+<div class="img"><a href="##" title="3.20-3.23iPhone特价狂欢，iPhone11领券立减200元，享白条12期免息，多款机型超低价抢购！详情请点击！"><img src="img/q2.jpg" class="bigImg"></a></div>
+<div class="pric"><em>¥</em>5999.00</div>
+<div class="name"><a href="##" title="3.20-3.23iPhone特价狂欢，iPhone11领券立减200元，享白条12期免息，多款机型超低价抢购！详情请点击！">Apple iPhone 11 (A2223) 128GB 白色 移动联通电信4G手机 双卡双待</a></div>
+<div class="attr"><i>其它内存</i></div>
+<div class="comm"><i>二手有售</i>已有<b>149万+</b>人评价</div>
+<div class="shop">Apple产品京东自营旗舰店</div>
+<div class="icon"><i>自营</i><i>赠</i></div>
+</div>
+</li>
+<li>
+<div>
+<div class="img"><a href="##" title="限时优惠999！荣耀20青春版，光学屏幕指纹，4800万超清三摄！荣耀爆品特惠，选品质，购荣耀~"><img src="img/q1.jpg" class="bigImg"></a></div>
+<div class="pric"><em>¥</em>999.00</div>
+<div class="name jingxuan"><a href="##" title="限时优惠999！荣耀20青春版，光学屏幕指纹，4800万超清三摄！荣耀爆品特惠，选品质，购荣耀~">荣耀20青春版 AMOLED屏幕指纹 4000mAh大电池 20W快充 4800万 手机 4GB+64GB 冰岛幻境</a></div>
+<div class="attr"><i>6.25-6.34英寸</i><i>4GB</i><i>4000mAh-4249mAh</i></div>
+<div class="comm">已有<b>23万+</b>人评价</div>
+<div class="shop">荣耀京东自营旗舰店</div>
+<div class="icon"><i>自营</i><i>放心购</i><i>闪购</i></div>
+</div>
+</li>
+<li>
+<div>
+<div class="img"><a href="##" title="3.20-3.23iPhone特价狂欢，iPhone11领券立减200元，享白条12期免息，多款机型超低价抢购！详情请点击！"><img src="img/q2.jpg" class="bigImg"></a></div>
+<div class="pric"><em>¥</em>5999.00</div>
+<div class="name"><a href="##" title="3.20-3.23iPhone特价狂欢，iPhone11领券立减200元，享白条12期免息，多款机型超低价抢购！详情请点击！">Apple iPhone 11 (A2223) 128GB 白色 移动联通电信4G手机 双卡双待</a></div>
+<div class="attr"><i>其它内存</i></div>
+<div class="comm"><i>二手有售</i>已有<b>149万+</b>人评价</div>
+<div class="shop">Apple产品京东自营旗舰店</div>
+<div class="icon"><i>自营</i><i>赠</i></div>
+</div>
+</li>
+</ul>
+</div>
+</body>
+</html>
